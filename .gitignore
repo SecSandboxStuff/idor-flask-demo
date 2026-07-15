@@ -1,0 +1,11 @@
+# Scan artifacts
+.sast-out/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# SQLite demo database
+*.db

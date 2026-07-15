@@ -1,0 +1,8 @@
+{
+  "path": "/Users/stavshemesh/idor-flask-demo",
+  "outputDirectory": "/Users/stavshemesh/idor-flask-demo/.sast-out",
+  "scanLanguage": "python",
+  "enabledCwes": ["CWE-639"],
+  "projectName": "idor-flask-demo",
+  "scans": { "incremental": false }
+}
