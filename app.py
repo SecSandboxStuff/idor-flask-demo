@@ -19,6 +19,7 @@ from flask_login import (
 )
 from werkzeug.security import check_password_hash, generate_password_hash
 
+
 from models import Order, User, db
 
 app = Flask(__name__)
