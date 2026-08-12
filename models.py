@@ -30,3 +30,4 @@ class Order(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
     item = db.Column(db.String(120), nullable=False)
     amount = db.Column(db.Numeric(10, 2), nullable=False)
+
