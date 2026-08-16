@@ -37,6 +37,7 @@ def load_user(user_id):
     return db.session.get(User, int(user_id))
 
 
+
 @app.route("/login", methods=["POST"])
 def login():
     body = request.get_json(force=True)
