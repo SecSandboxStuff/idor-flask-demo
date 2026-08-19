@@ -1,5 +1,4 @@
 """Database models for the order-tracking demo.
-
 An Order is owned by exactly one User via `Order.user_id`. Access to an order
 is therefore *supposed* to be restricted to its owner — but the single-order
 endpoint in app.py never enforces that, which is the IDOR (CWE-639).
@@ -22,7 +21,6 @@ class User(db.Model, UserMixin):
 
 class Order(db.Model):
     __tablename__ = "orders"
-
     id = db.Column(db.Integer, primary_key=True)
     # The owning user. This column is what *should* gate access to the order,
     # but get_order() in app.py never compares it to the logged-in principal.
