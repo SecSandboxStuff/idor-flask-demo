@@ -105,3 +105,4 @@ if __name__ == "__main__":
     with app.app_context():
         _seed()
     app.run(debug=True)
+
